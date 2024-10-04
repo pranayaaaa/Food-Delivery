@@ -1,0 +1,78 @@
+.list-add {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.list-add p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.allfood {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.list-table-format {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.list-table-format.title {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.list-table-format:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.list-table-format img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.list-table-format p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.list-table-format b {
+    font-size: 14px;
+}
+.cursor {
+    color: #e74c3c; 
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .list-table-format {
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .list-table-format.title {
+        display: none;
+    }
+}

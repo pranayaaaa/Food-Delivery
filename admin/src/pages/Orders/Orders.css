@@ -1,0 +1,86 @@
+.order-add {
+    margin: 40px 20px;
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .order-add h3 {
+    font-size: 26px;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: black;
+  }
+  
+  .order-item img {
+    width: 50px;
+  }
+  
+  .order-item p {
+    margin: 3px;
+    color: black;
+  }
+  
+  .order-item-food {
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  .order-item-name {
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .order-item-address {
+    color: #7f8c8d;
+  }
+  
+  .order-item-phone {
+    color: #7f8c8d;
+  }
+  
+  .order-item select {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border:1px solid #2980b9;
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .order-item {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 15px;
+    }
+  
+    .order-item img {
+      margin-bottom: 10px;
+    }
+  
+    .order-item select {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

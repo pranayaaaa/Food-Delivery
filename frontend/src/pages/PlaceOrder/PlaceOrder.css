@@ -1,0 +1,114 @@
+.place-order {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+.place-order-left,
+.place-order-right {
+    flex: 1;
+    margin: 10px;
+}
+.place-order-left {
+    display: flex;
+    flex-direction: column;
+}
+.titlee {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.multi-fields {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-left: -9px;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+.cart-total {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cart-total h2 {
+    margin: 0 0 20px;
+}
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.cart-total-details b {
+    font-weight: 700;
+}
+button {
+    padding: 10px 20px;
+    background-color: rgb(45, 119, 189);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 30px;
+}
+button:hover {
+    background-color: rgb(35, 99, 169);
+}
+.payment-method {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-method h2 {
+    margin: 0 0 15px;
+}
+
+.payment-method label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+@media (max-width: 750px) {
+    .place-order {
+        flex-direction: column;
+    }
+
+    .place-order-left,
+    .place-order-right {
+        margin: 0;
+    }
+
+    .multi-fields {
+        flex-direction: column;
+        ;
+    }
+    .input[type="text"],
+    input[type="email"]{
+        margin-left: -9px;
+    }
+}

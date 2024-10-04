@@ -1,0 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: rgb(192, 181, 181);
+}
+.app-content{
+  display: flex;
+}
+.cursor{
+  cursor: pointer;
+}

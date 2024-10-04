@@ -1,0 +1,119 @@
+.cart {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 100px auto;
+}
+.cart-items {
+    margin-bottom: 20px;
+}
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 1fr 1.2fr 0.8fr 0.5fr;
+    align-items: center;
+    color: rgb(45, 119, 189);
+    font-size: max(1vw, 14px);
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+.cart-items-item {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+.cart-items-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.cart-items-item p {
+    margin: 0;
+    text-align: center;
+}
+.cross {
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.cart-total {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.cart-total h2 {
+    margin: 0 0 20px;
+}
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.cart-total-details b {
+    font-weight: 700;
+}
+button {
+    padding: 10px 20px;
+    background-color: rgb(96, 159, 201);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: rgb(50, 102, 179);
+}
+.cart-promocode-input button{
+    width: 6rem;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+}
+.cart-promocode {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.cart-promocode p {
+    margin: 0 0 10px;
+}
+.cart-promocode-input {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.cart-promocode-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+@media (max-width: 750px) {
+    
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+    .cart-promocode {
+        flex-direction: column;
+        justify-content: start;
+    }
+}
