@@ -4,7 +4,6 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import { assets } from "../../assets/assets";
 
-const url = import.meta.env.VITE_API_URL; 
 
 const Orders = ({ url }) => {
   const [orders, setOrders] = useState([]);
