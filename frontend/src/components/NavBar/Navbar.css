@@ -28,6 +28,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s all;
+    margin-top: 4px;
 }
 .navbar button:hover{
     background-color: rgb(50, 102, 179);
