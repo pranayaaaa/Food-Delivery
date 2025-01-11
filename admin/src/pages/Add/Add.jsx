@@ -4,6 +4,8 @@ import { assets } from '../../assets/assets'
 import axios from "axios"
 import { toast } from 'react-toastify';
 
+const url = import.meta.env.VITE_API_URL; 
+
 const Add = ({url}) => {
 
     const [image, setImage] = useState(null);
